@@ -7,7 +7,7 @@ O intuito deste projeto é deployar a projeto proposto de maneira facil, eficien
 
 ##  Pipeline
 
-![Pipeline](.github/images/pipeline.png)
+![Pipeline](.github/images/Pipeline.png)
 
 # How to Deploy
 ## Requisitos
