@@ -1,0 +1,29 @@
+{
+  "Version":"2012-10-17",
+  "Statement":[
+     {
+        "Effect":"Allow",
+        "Action":[
+           "ecs:*",
+           "elasticloadbalancing:*"
+        ],
+        "Resource":[
+           "*"
+        ]
+     },
+     {
+        "Action":[
+           "iam:PassRole"
+        ],
+        "Resource":"*",
+        "Effect":"Allow",
+        "Condition":{
+           "StringEqualsIfExists":{
+              "iam:PassedToService":[
+                 "ecs-tasks.amazonaws.com"
+              ]
+           }
+        }
+     }
+  ]
+}
